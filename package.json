@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.0",
+    "@emotion/core": "^10.0.17",
     "@headlessui/react": "^1.6.5",
     "@tanstack/react-query-devtools": "^4.0.3",
     "axios": "^0.27.2",
@@ -21,7 +21,7 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.3.0",
     "react-icons": "^4.4.0",
-    "react-loading-skeleton": "^3.1.0",
+    "react-loading-skeleton": "^3.0.0",
     "react-pure-loaders": "^3.0.1",
     "react-query": "^3.39.1",
     "react-responsive": "^9.0.0-beta.6",
