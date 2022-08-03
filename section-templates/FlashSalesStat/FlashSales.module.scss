@@ -1,0 +1,29 @@
+.loadingContainer{
+    @apply flex flex-col gap-2 items-center;
+}
+
+.SkeletonContainer{
+    @apply container mx-auto h-[400px] flex gap-2 justify-center;
+
+    .skeletonCard{
+        @apply  w-72 scale-90 rounded-sm;
+
+        .skeleton{
+            @apply rounded-xl h-full ;
+        }
+    }
+}
+
+.mainContainer{
+    @apply container mx-auto mt-[100px] px-2;
+
+    .header{
+        h2{
+            @apply text-2xl font-bold text-zinc-600 mt-10;
+        }
+    }
+
+    .sliderContainer{
+        @apply  container mx-auto min-h-[480px];
+    }
+}

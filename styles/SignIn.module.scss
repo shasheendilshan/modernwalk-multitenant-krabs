@@ -1,0 +1,63 @@
+.mainContainer{
+    @apply bg-slate-100 min-h-screen flex flex-col justify-center;
+}
+.loginFromContainer{
+    @apply max-w-md w-full mx-auto;
+}
+.header{
+    @apply max-w-md w-full mx-auto mb-5;
+    h2{
+        @apply text-3xl font-bold text-gray-800 mt-2 text-center;
+    }
+}
+.errorContainer{
+    @apply flex items-center justify-center py-1;
+
+    p{
+        @apply text-btn_danger_normal;
+    }
+}
+.form{
+        
+    @apply px-8 ;
+
+    .forgotPassword{
+        @apply flex items-center mt-1;
+        p{
+           @apply font-medium text-sm text-btn_primary_normal leading-[21px] font-quicksand cursor-pointer;
+        }
+    }
+    .loadingContainer{
+        @apply container mx-auto flex justify-center;
+    }
+    .bottomContainer{
+        @apply flex w-full justify-between mt-6;
+    
+        .rememberMe{
+            @apply flex items-center justify-between;
+        
+            input[type=checkbox]{
+                @apply h-4 w-4  rounded cursor-pointer ;
+
+              
+            }
+
+            label{
+                @apply ml-2 text-sm font-quicksand;
+            }
+        }
+        .LoginBtn{
+              width: 150px;
+             
+        }
+    }
+    .createAccount{
+      @apply flex items-center justify-center pt-4;
+      label{
+         @apply ml-2 text-sm font-quicksand;
+      }
+      p{
+        @apply font-bold font-quicksand text-slate-500 ml-2 text-blue-500 cursor-pointer;
+      }
+    }
+}

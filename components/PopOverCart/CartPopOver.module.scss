@@ -1,0 +1,122 @@
+.popOverBtn{
+    @apply relative outline-none;
+    
+    span{
+        @apply bg-red-500 p-2 h-[25px] w-[25px] rounded-full text-white flex items-center justify-center top-[-10px] right-[-12px] absolute ;
+    }
+
+    .shoppingCartIcon{
+        @apply text-text_main;
+    }
+}
+
+.popOverPanel{
+    @apply absolute top-14 right-0  z-10 bg-white overflow-hidden shadow-card w-[100vw] h-[calc(90vh-70px)] md:h-[calc(100vh-70px)] md:w-[400px] rounded-2xl  ;
+    .popOverPanelHeader{
+        @apply w-full  text-center bg-elephant_contrast flex justify-between px-2;
+        .closeIcon{
+            @apply hover:opacity-30;
+        }
+        h2{
+            @apply p-2 text-2xl font-quicksand font-bold text-text_main;
+        }
+    }
+    .scrollViewContainer{
+        @apply relative h-[70vh] overflow-y-auto py-3 bg-white;
+       
+        &::-webkit-scrollbar{
+            width: 18px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #d6dee1;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: #a8bbbf;
+          }
+    }
+    .productsContainer{
+      @apply flex flex-col gap-1 pb-[80px] pt-2 overflow-y-auto;
+    }
+    .cartEmptyContainer{
+       @apply  w-full flex flex-col items-center justify-center;
+       .icon{
+        @apply text-text_main;
+       }
+       p{
+         @apply text-xl font-quicksand font-medium text-text_main leading-7 py-3;
+       }
+    }
+    
+    .cartBottomContainer{
+        @apply w-full h-48 absolute bottom-0 right-0 pt-2 bg-elephant_contrast;
+    }
+    .totalItems{
+        @apply flex w-full justify-between px-4;
+    
+        h2{
+           @apply text-xl  font-bold font-quicksand text-text_main;
+    
+            
+        }
+    }
+    .total{
+        @apply flex w-full justify-between px-4;
+    
+        h2{
+        @apply text-xl font-bold font-quicksand
+        }
+    
+    }
+    .bottomButtons{
+      @apply flex w-full  px-4 mt-2
+    }
+}
+
+
+
+
+// cart item
+
+.cartItemMainContainer{
+    @apply flex shadow-card rounded-xl h-28 overflow-hidden p-3  mx-1;
+    .imageContainer{
+        @apply w-16 h-16 relative;
+        
+    }
+    .midContainer{
+        @apply w-48 px-1;
+    }
+    .productTitle{
+        @apply h-10;
+        p{
+            @apply text-base font-quicksand;
+        }
+    }
+    .quantityContainer{
+        @apply flex items-center mt-4 w-28 justify-between m-auto;
+    
+        span{
+            @apply bg-primary p-1 rounded-full active:brightness-125 cursor-pointer;
+        }
+        p{
+            @apply px-2 text-xl 
+        }
+    }
+    .endContainer{
+        @apply w-32 text-right relative;
+        p{
+           @apply text-[14px] font-bold truncate;
+        }
+        span{
+            @apply absolute bottom-1 right-1  cursor-pointer;
+          .icon{
+            @apply text-btn_danger_normal hover:text-btn_danger_hover active:text-btn_danger_active;
+          }
+        }
+    }
+}
+
+

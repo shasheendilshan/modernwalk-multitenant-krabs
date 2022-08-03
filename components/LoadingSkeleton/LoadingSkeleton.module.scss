@@ -1,0 +1,18 @@
+.mainContainer{
+    @apply  container  h-[400px] mx-auto ;
+
+    .skeletonContainer{
+        @apply w-full flex flex-wrap  md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-3 justify-center;
+   
+   
+        .skeletonBg{
+          @apply  w-72 scale-90 rounded-sm bg-slate-200;
+           
+          .skeleton{
+           @apply  h-[400px] rounded-sm; 
+          }
+
+        }
+
+    }
+}

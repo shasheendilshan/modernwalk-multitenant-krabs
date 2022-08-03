@@ -1,0 +1,23 @@
+.mainContainer{
+    @apply mt-[80px];
+}
+
+.errorContainer{
+    @apply container mx-auto mt-[80px] px-2;
+
+    h2{
+        @apply text-2xl font-bold text-zinc-600 mt-10;
+    }
+
+    .errorMessageContainer{
+        @apply container min-h-[480px] mx-auto;
+    }
+}
+
+.loadingContainer{
+     @apply container mx-auto flex justify-center;
+}
+
+.primary{
+    @apply bg-primary;
+}

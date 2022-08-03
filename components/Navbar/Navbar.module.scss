@@ -1,0 +1,31 @@
+.mainContainer{
+    @apply w-[100%] h-[70px] z-20 bg-white drop-shadow-md fixed flex items-center top-0;
+ .navbar{
+    @apply container mx-auto flex items-center justify-between relative ;
+    .header{
+        @apply flex items-center justify-center h-full;
+
+        h1{
+           @apply text-3xl ml-5 md:ml-5 md:text-4xl font-bold text-text_main cursor-pointer;
+        }
+    }
+    .btnContainer{
+      @apply items-center h-full flex justify-end flex-1 space-x-3 mr-5 ;
+
+      .nameContainer{
+         @apply flex items-center justify-end  space-x-3 md:mr-7;
+
+         span{
+           @apply bg-gray-300 text-text_main h-[35px] w-[35px] flex items-center justify-center rounded-full;
+         }
+         h2{
+            @apply text-xl leading-5 font-quicksand font-bold  uppercase;
+         }
+         h3{
+            @apply text-base leading-4 font-quicksand hidden md:block ;
+         }
+      }
+    }
+ }
+    
+}

@@ -1,0 +1,47 @@
+
+.mainContainer{
+  @apply relative z-20;
+
+  .blurBackground{
+    @apply fixed  inset-0 bg-black bg-opacity-25;
+  }
+  .panelContainer{
+    @apply fixed inset-0 flex items-center justify-center overflow-y-auto;
+    .panel{
+      @apply  max-w-[432px] h-[287px] relative  w-full overflow-hidden transform  rounded-2xl bg-white  shadow-xl transition-all ;
+      .header{
+        @apply text-2xl font-quicksand font-bold leading-9 text-text_main mt-8 px-8;
+        @apply flex flex-row items-center justify-between text-left;
+      
+        .closeIconContainer{
+           @apply flex items-center justify-center cursor-pointer;
+
+           .closeIcon{
+            @apply hover:opacity-30 text-black
+           }
+        }
+      
+        
+      }
+      
+      .body{
+        @apply mt-8 px-8 text-left;
+        p{
+            @apply font-quicksand text-base leading-6 font-normal;
+        }
+      }
+    
+      .btnContainer{
+        @apply h-[84px] absolute bottom-0 left-0   w-full  flex items-center justify-end bg-elephant_gray;
+    
+        .btn{
+            @apply w-[230px] gap-[10px]  flex  mr-8 py-4;
+        }
+      }
+    }
+  }
+  
+}
+
+
+

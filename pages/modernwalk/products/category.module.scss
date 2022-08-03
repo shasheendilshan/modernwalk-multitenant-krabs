@@ -1,0 +1,38 @@
+.mainContainer{
+    @apply mt-[80px];
+}
+
+.loadingContainer{
+    @apply container mx-auto mt-[80px];
+
+    .heading{
+        h2{
+            @apply text-2xl font-bold text-zinc-600 m-10;
+        }
+       
+    }
+    .ballBeatContainer{
+        @apply w-full flex justify-center;
+
+        .women{
+            @apply bg-secondary;
+        }
+        .men{
+            @apply bg-primary;
+        }
+    }
+ 
+}
+
+.productContainer{
+    @apply flex flex-col container mx-auto mt-[50px];
+    .header{
+        @apply mt-[10px];
+        h2{
+          @apply text-2xl font-bold text-zinc-600 m-10;
+        }
+    }
+    .productList{
+        @apply w-full flex flex-wrap  md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-3 justify-center;
+    }
+}

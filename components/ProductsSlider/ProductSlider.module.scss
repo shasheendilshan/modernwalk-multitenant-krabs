@@ -1,0 +1,10 @@
+.mainContainer{
+    @apply  py-2 container;
+}
+
+.rightArrow{
+    @apply absolute top-[180px] right-2 md:right-[-20px] w-[50px] h-[50px] rounded-full bg-secondary  flex items-center justify-center ;
+}
+.leftArrow{
+    @apply absolute z-10 top-[180px] left-2 md:left-[-20px] w-[50px] h-[50px] rounded-full bg-secondary flex items-center justify-center ;
+}

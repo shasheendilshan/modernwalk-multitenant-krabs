@@ -1,0 +1,52 @@
+.mainContainer{
+    @apply mt-[80px];
+}
+
+.loadingContainer{
+    @apply container mx-auto mt-[80px];
+
+    .heading{
+        h2{
+            @apply text-2xl font-bold text-zinc-600 m-10;
+        }
+       
+    }
+    .ballBeatContainer{
+        @apply w-full flex justify-center;
+
+        .women{
+            @apply bg-secondary;
+        }
+        .men{
+            @apply bg-primary;
+        }
+    }
+    .skeletonContainer{
+         @apply container mx-auto  h-[400px];
+         
+         .skeletonInnerContainer{
+            @apply w-full flex flex-wrap  md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-3 justify-center;
+         
+           .skeletonBox{
+            @apply w-72 scale-90 rounded-sm ;
+            .skeleton{
+                  @apply rounded-xl  h-[400px];
+            }
+           }
+        }
+
+    }
+}
+
+.productContainer{
+    @apply flex flex-col container mx-auto mt-[50px];
+    .header{
+        @apply mt-[10px];
+        h2{
+          @apply text-2xl font-bold text-zinc-600 m-10;
+        }
+    }
+    .productList{
+        @apply w-full flex flex-wrap  md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-3 justify-center;
+    }
+}

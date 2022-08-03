@@ -1,0 +1,33 @@
+.mainContainer{
+    @apply h-full w-72 bg-white flex flex-col mx-auto items-center  rounded-lg shadow-card pt-2 cursor-pointer scale-95;
+    //@apply hover:scale-100 transition duration-300 ease-linear;
+    .titleContainer{
+        @apply w-full p-2 h-24 overflow-hidden;
+        h3{
+        @apply text-lg font-semibold text-center;
+        }
+     }
+     
+     .imageContainer{
+         @apply h-36 w-36 mb-2 relative flex justify-center;
+         
+        
+     }
+     .contentContainer{
+         @apply h-36  w-full rounded-lg p-3 flex flex-col items-center overflow-auto;
+     
+         h3{
+            @apply text-xl font-bold text-blue-900 pb-2
+         }
+         .description{
+             @apply h-20 overflow-hidden py-2 w-full;
+     
+             p{
+                @apply text-xs md:text-sm text-center text-zinc-900  overflow-hidden py-2
+             }
+         }
+     }
+    
+
+}
+

@@ -1,0 +1,81 @@
+.dialog{
+  @apply relative z-20 ;
+  .blurBackground{
+      @apply fixed inset-0  bg-black bg-opacity-20;
+  }
+  .dialogPanelContainer{
+    @apply flex min-h-full items-center justify-center p-4 text-center;
+
+    .dialogPanel{
+      @apply relative overflow-hidden bg-white  w-full max-w-md h-[550px] rounded-2xl;
+    }
+    .header{
+      @apply text-xl font-quicksand font-bold leading-6 text-text_main mt-6 px-[24px];
+      @apply flex flex-row items-center justify-between text-left;
+    
+      .closeIconContainer{
+         @apply flex items-center justify-center cursor-pointer hover:opacity-30;
+    
+         
+      }
+    
+      span{
+        &:first-of-type{
+          @apply w-[350px] truncate;
+        }
+      }
+    }
+
+    .content{
+      @apply w-full  mt-8 h-[400px]  overflow-y-auto;
+      &::-webkit-scrollbar{
+        width: 18px;
+    }
+      &::-webkit-scrollbar-thumb {
+        background-color: #d6dee1;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+      }
+      h3{
+        @apply text-xl font-quicksand font-bold py-2
+      }
+      .productImage{
+        @apply h-36 w-36 relative mb-2 flex justify-center mx-auto;
+        .img{
+         @apply object-contain;
+        }
+     }
+    
+     .countContainer{
+       @apply flex items-center w-full px-36 py-3 justify-center  mb-4;
+       span{
+         @apply bg-blue-600 p-3 rounded-md  active:brightness-125 cursor-pointer;
+        }
+        p{
+          @apply px-4 text-xl font-quicksand;
+        }
+     }
+     .description{
+       @apply text-justify px-3 pb-7;
+   
+       h3{
+        @apply font-quicksand font-bold text-base text-text_main leading-8
+       }
+       p{
+         @apply text-sm font-quicksand text-text_active
+       }
+     }
+    }
+   
+    .bottomContainer{
+      @apply absolute w-full  h-[80px] max-w-md flex items-center gap-[10px] px-8 py-4 bottom-0 left-0 bg-elephant_gray;
+    }
+  }
+  
+}
+
+

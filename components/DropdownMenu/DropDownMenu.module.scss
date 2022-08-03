@@ -1,0 +1,26 @@
+.menu{
+  
+
+    .menuButton{
+        @apply relative flex items-center;
+
+        .icon{
+            @apply text-text_main;
+        }
+    }
+
+    .menuItems{
+        @apply bg-white shadow-card flex flex-col gap-1 p-3 rounded-md absolute top-[40px] right-0;
+
+      .menuItem{
+        @apply flex items-center px-2 py-2 rounded hover:bg-btn_primary_normal active:bg-btn_primary_normal cursor-pointer;
+
+        p{
+            @apply ml-1 font-quicksand text-base;
+        }
+        
+      }
+   
+
+    }
+}

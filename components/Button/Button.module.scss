@@ -1,0 +1,59 @@
+%btn{
+    
+    @apply  w-full  rounded-[8px]  px-[10px] pt-[14px] pb-[10px] md:px-[24px] font-quicksand font-bold  text-sm md:text-base  box-border;
+   
+}
+
+.primary{
+  @extend %btn;
+  @apply   bg-btn_primary_normal text-white;
+  @apply hover:bg-btn_primary_hover hover:shadow-btn_hover;
+  @apply  active:bg-btn_primary_active active:shadow-btn_hover;
+  @apply disabled:bg-btn_primary_disabled disabled:shadow-none ;
+  @apply  focus:outline-none
+}
+.outlined{
+    @extend %btn;
+    @apply text-btn_primary_normal border border-btn_primary_normal bg-white;   
+    @apply hover:bg-btn_outlined_hover hover:shadow-btn_hover;
+    @apply active:bg-btn_outlined_active;
+    @apply disabled:bg-btn_outlined_disabled border-btn_primary_disabled disabled:text-btn_outlined_hover disabled:shadow-none;
+    @apply focus:outline-none;
+   
+}
+
+
+.contained-primary{
+
+    @extend %btn;
+    @apply   bg-btn_primary_normal text-white;
+    @apply hover:bg-btn_primary_hover hover:shadow-btn_hover;
+    @apply  active:bg-btn_primary_active active:shadow-btn_hover;
+    @apply disabled:bg-btn_primary_disabled disabled:shadow-none ;
+    @apply  focus:outline-none;
+}
+.outlined-primary{
+     
+    @extend %btn;
+    @apply text-btn_primary_normal border border-btn_primary_normal bg-white;   
+    @apply hover:bg-btn_outlined_hover hover:shadow-btn_hover;
+    @apply active:bg-btn_outlined_active;
+    @apply disabled:bg-btn_outlined_disabled border-btn_primary_disabled disabled:text-btn_outlined_hover disabled:shadow-none;
+    @apply focus:outline-none;
+}
+.contained-danger{
+   @extend %btn;
+   @apply   bg-btn_danger_normal text-white;
+   @apply hover:bg-btn_danger_hover hover:shadow-btn_hover;
+   @apply  active:bg-btn_danger_active active:shadow-btn_hover;
+   @apply  focus:outline-none;
+
+}
+.outlined-danger{
+    @extend %btn;
+    @apply text-btn_danger_normal border border-btn_danger_normal;   
+    @apply hover:bg-btn_danger_outlined_hover hover:shadow-btn_hover;
+    @apply active:bg-btn_danger_outlined_active;
+    @apply disabled:bg-btn_outlined_disabled disabled:text-btn_outlined_hover;
+    @apply focus:outline-none;
+}

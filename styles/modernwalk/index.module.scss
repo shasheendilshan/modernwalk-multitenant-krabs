@@ -1,0 +1,44 @@
+.mainContainer{
+    @apply pt-[10px] ;
+}
+
+.errorContainer{
+    @apply container mx-auto mt-[80px] px-2;
+
+    h2{
+        @apply text-2xl font-bold text-zinc-600 mt-10;
+    }
+
+    .errorMessageContainer{
+        @apply container min-h-[480px] mx-auto;
+    }
+}
+
+.loadingContainer{
+     @apply container mx-auto flex justify-center;
+}
+
+.primary{
+    @apply text-primary;
+}
+
+
+.loadingMainContainer{
+    @apply mt-[80px];
+
+    .skeletonContainer{
+        @apply container mx-auto h-[400px] flex justify-center;
+    
+    
+        .skeletonBg{
+          @apply  w-72 scale-90 rounded-sm bg-slate-200;
+           
+          .skeleton{
+           @apply  h-[400px] rounded-sm; 
+          }
+    
+        }
+    
+    }
+}
+

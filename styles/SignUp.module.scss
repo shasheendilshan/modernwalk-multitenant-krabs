@@ -1,0 +1,31 @@
+.mainContainer{
+   @apply mt-[70px]  min-h-screen flex bg-elephant_gray flex-col;
+
+   .formContainer{
+    @apply max-w-md w-full mx-auto mt-4 p-8;
+     
+    .header{
+        @apply max-w-md w-full mx-auto mb-5;
+        h2{
+            @apply text-3xl font-bold text-text_main mt-2 text-center;
+        }
+       }
+     .loadingContainer{
+        @apply container mx-auto flex justify-center;
+     }
+     .btnContainer{
+        @apply mt-8;
+     }
+     .SignInLinkContainer{
+        @apply flex items-center justify-center pt-4;
+     label{
+          @apply ml-2 text-sm font-quicksand text-slate-500;
+        }
+      p{
+        @apply  font-bold text-blue-500 cursor-pointer font-quicksand ml-2;
+      }
+     }
+
+   }
+  
+}
