@@ -6,7 +6,7 @@ module.exports = {
         {
           development: /[a-z]*\.modernwalk\.com/,
           stage: "stage.modernwalk.com",
-          production: /[a-z]*\.website-1\.com/, // Regex supported!
+          production: /[a-z]*\.modernwalk-krab.herokuapp.com/, // Regex supported!
         },
       ],
     },
