@@ -26,6 +26,7 @@ MyApp.getInitialProps = async ({ Component, ctx }: any) => {
 
   try {
     const tenantDetails = await getTenantDetails(host);
+    console.log("Host", host);
     console.log("tenant details", tenantDetails.data);
 
     if (tenantDetails.data.length > 0) {
