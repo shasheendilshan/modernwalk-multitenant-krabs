@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=development  node index.js",
+    "start": "node_modules/cross-env/bin/cross-env.js cross-env NODE_ENV=development  node index.js",
     "lint": "next lint"
   },
   "dependencies": {
