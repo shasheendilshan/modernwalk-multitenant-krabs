@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev":"cross-env NODE_ENV=development  node index.js",
+    "nextdev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=development  node index.js",
+    "start": "node index.js",
     "lint": "next lint"
   },
   "dependencies": {
