@@ -4,9 +4,11 @@ module.exports = {
       name: "modernwalk",
       domains: [
         {
-          development: /[a-z]*\.modernwalk-krab.herokuapp.com/,
+          development:
+            /[a-z]*\.modernwalkmultitenant-env.eba-wp83tjsx.us-west-2.elasticbeanstalk.com/,
           stage: "stage.modernwalk.com",
-          production: /[a-z]*\.modernwalk-krab.herokuapp.com/, // Regex supported!
+          production:
+            /[a-z]*\.modernwalkmultitenant-env.eba-wp83tjsx.us-west-2.elasticbeanstalk.com/, // Regex supported!
         },
       ],
     },
