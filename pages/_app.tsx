@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 MyApp.getInitialProps = async ({ Component, ctx }: any) => {
-  const host = ctx?.req["hostname"]?.split(".")[1];
+  const host = ctx?.req["hostname"]?.split(".")[0];
   let pageProps = {};
   let error = false;
   let tenantName = null;
