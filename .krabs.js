@@ -5,10 +5,10 @@ module.exports = {
       domains: [
         {
           development:
-            /[a-z]*\.modernwalkmultitenant-env.eba-wp83tjsx.us-west-2.elasticbeanstalk.com/,
+            /[a-z]*\.modernwalkmultitenant-env\.eba-wp83tjsx\.us-west-2\.elasticbeanstalk\.com/,
           stage: "stage.modernwalk.com",
           production:
-            /[a-z]*\.modernwalkmultitenant-env.eba-wp83tjsx.us-west-2.elasticbeanstalk.com/, // Regex supported!
+            /[a-z]*\.modernwalkmultitenant-env\.eba-wp83tjsx.us-west-2\.elasticbeanstalk\.com/, // Regex supported!
         },
       ],
     },
