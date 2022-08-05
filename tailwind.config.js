@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
-
+        background_primary: "var(--background_primary)",
         btn_primary_normal: "var(--btn_primary_normal)",
         btn_primary_hover: "var(--btn_primary_hover)",
         btn_primary_active: "var(--btn_primary_active)",

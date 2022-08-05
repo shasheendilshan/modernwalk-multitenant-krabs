@@ -11,9 +11,10 @@ type Props = {
   children: React.ReactNode;
   name?: string;
   tenantId?: string;
+  theme: any;
 };
 
-const Layout: React.FC<Props> = ({ children, name, tenantId }) => {
+const Layout: React.FC<Props> = ({ children, name, tenantId, theme }) => {
   return (
     <QueryProvider>
       <GlobalStateProvider tenant_Id={tenantId}>
@@ -21,7 +22,7 @@ const Layout: React.FC<Props> = ({ children, name, tenantId }) => {
           <UserProvider>
             <Toaster />
             <ProductModal />
-            <RootStyleLoader />
+            <RootStyleLoader theme={theme} />
             <Navbar name={name ? name : ""} />
             {children}
           </UserProvider>
