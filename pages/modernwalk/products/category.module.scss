@@ -1,5 +1,5 @@
 .mainContainer{
-    @apply mt-[80px];
+    @apply mt-[80px] bg-background_primary;
 }
 
 .loadingContainer{
@@ -25,7 +25,7 @@
 }
 
 .productContainer{
-    @apply flex flex-col container mx-auto mt-[50px];
+    @apply flex flex-col container mx-auto mt-[50px] bg-background_primary ;
     .header{
         @apply mt-[10px];
         h2{
